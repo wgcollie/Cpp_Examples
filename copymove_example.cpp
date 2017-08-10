@@ -13,9 +13,10 @@ public:
         std::cout << "Class A: " << name << "\n";
         std::cout << "    address: " << this << "\n";
         std::cout << "    member x address: " << &x << "\n";
-        std::cout << "    member x values: " << "\n";
+        std::cout << "    member x (address)values: " << "\n";
         for (auto &e : x) {
-            std::cout << "    (" << &e << ")" << e << "\n";
+            std::cout << "        ";
+            std::cout << "(" << &e << ")" << e << "\n";
         };
     }; 
 private:
